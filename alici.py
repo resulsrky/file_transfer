@@ -6,12 +6,13 @@ PORT = 9999  # Dinlenecek port numarası
 BUFFER_SIZE = 1024  # Tek seferde alınacak maksimum veri boyutu
 
 # Yeni dosyanın adı
-FILENAME = 'alinan_dosya.txt'
+FILENAME = 'alinan_dosya.jpeg'
 
 # UDP soketi oluştur
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Soketi belirtilen host ve porta bağla
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 s.bind((HOST, PORT))
 
 print(f"[*] {HOST}:{PORT} adresinde dinleme baslatildi...")

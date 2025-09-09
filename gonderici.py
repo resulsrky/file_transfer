@@ -4,12 +4,12 @@ import time
 # Alıcının (hedef) ayarları
 # EĞER YEREL AĞDA TEST EDİYORSANIZ: Alıcının IP adresini yazın (ör: '192.168.1.5')
 # EĞER İNTERNETTEN GÖNDERİYORSANIZ: Alıcının Genel IP adresini yazın
-HOST = '127.0.0.1'  # Şimdilik kendimize (localhost) gönderelim
-PORT = 9999
+HOST = '192.168.1.207'  # Şimdilik kendimize (localhost) gönderelim
+PORT = 4444
 BUFFER_SIZE = 1024  # Parça boyutu
 
 # Gönderilecek dosyanın adı
-FILENAME = 'saferoom_logo.svg'
+FILENAME = 'WhatsApp Image 2025-08-02 at 23.56.37.jpeg'
 # UDP soketi oluştur
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
